@@ -29,7 +29,6 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem;
 }
 
 .rede{
@@ -46,5 +45,124 @@ nav{
     gap: 1rem;
     margin-inline: var(--distancia-tela);
     height: 50%;
-    padding: 2rem;
+    padding: var(--distancia-tela);
+}
+
+.logo{
+    display: flex;
+    padding: var(--distancia-tela);
+    margin-inline: var(--distancia-tela);
+    align-items: center;
+}
+
+.logo img{
+    height: 5rem;
+}
+
+.logo h1{
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+main{
+    padding: var(--distancia-tela);
+    margin-inline: var(--distancia-tela);
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
+    grid-auto-rows: 18rem;  ;
+    gap: .5rem;
+}
+
+.content{
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.box1{
+    background-image: url(../images/josh-marshall-7waHOTcvcT4-unsplash.jpg);
+    width: 100%;
+
+    && div{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: var(--Laranja);
+        align-items: start;
+        justify-content: start;
+        width: 30%;
+        color: var(--Branca);
+    }
+
+    && h1{
+        font-size: 2rem;
+        padding: var(--distancia-tela);
+        font-weight: 500;
+    }
+
+    && p{
+        padding: var(--distancia-tela);
+    }
+}
+
+.box2{
+    background-image: url(../images/moto-sol.jpg);
+}
+
+.box3{
+    background-color: var(--Cinza-escuro);
+    color: var(--Branca);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:var(--distancia-tela);
+
+    && p{
+        display: flex;
+        align-items: end;
+    }
+}
+
+.box4{
+    background-color: var(--Laranja);
+    color: var(--Branca);
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--distancia-tela);
+
+    && h1{
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        margin-left: 18rem;
+        
+    }
+}
+
+.box5{
+    background-image: url(../images/moto-rua.jpg);
+}
+
+.box6{
+    background-image: url(../images/moto-costas.jpg);
+}
+
+.box7{
+    background-image: url(../images/moto-garagem.jpg);
+}
+
+.box8{
+    background-image: url(../images/icon-hd.jpg);
+}
+.box-row{
+    grid-row:span 2;
+}
+
+.box-col{
+    grid-column: span 2;
+
+}
+
+.box-row3{
+    grid-row: span 3;
 }

@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif; 
@@ -7,5 +7,44 @@
 }
 
 :root{
-    
+    --Laranja: #EF6209;
+    --Cinza-escuro: #121212;
+    --Branca: #FFFFFF;
+    --distancia-tela:2rem;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+nav{
+    background-color: var(--Cinza-escuro);
+}
+
+.navegador{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.rede{
+    color: var(--Branca);
+}
+
+.usuario{
+    color: var(--Laranja);
+}
+
+.rede,
+.usuario {
+    display: flex;
+    gap: 1rem;
+    margin-inline: var(--distancia-tela);
+    height: 50%;
+    padding: 2rem;
 }

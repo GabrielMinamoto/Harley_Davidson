@@ -68,16 +68,20 @@ main{
     padding: var(--distancia-tela);
     margin-inline: var(--distancia-tela);
     display: grid;
-    grid-template-columns: repeat(4, minmax(auto, 1fr));
-    grid-auto-rows: 18rem;  ;
+    
+    grid-template-columns: repeat(4 , 1fr);
+    grid-auto-rows: 18rem;  
     gap: .5rem;
+    
 }
 
 .content{
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
-    object-fit: cover;
+    
+    
+    
 }
 
 .box1{

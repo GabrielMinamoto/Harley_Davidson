@@ -68,9 +68,8 @@ main{
     padding: var(--distancia-tela);
     margin-inline: var(--distancia-tela);
     display: grid;
-    
     grid-template-columns: repeat(4 , 1fr);
-    grid-auto-rows: 18rem;  
+    grid-auto-rows: 30rem;  
     gap: .5rem;
     
 }
@@ -79,9 +78,6 @@ main{
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
-    
-    
-    
 }
 
 .box1{
